@@ -10,8 +10,10 @@ function Portfolio(){
         <div className="page__portfolio">
             
                 
-                    Portfolio
-                  
+                    
+                  <a href="https://pufimcev.github.io/nursary_primary_school/" target='_blanket'>
+                    <iframe title="TreeHouse_project" src="https://pufimcev.github.io/nursary_primary_school/" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true} frameBorder={0} sandbox='allow-same-origin allow-scripts'></iframe>
+                </a>
             
         </div>
     )
