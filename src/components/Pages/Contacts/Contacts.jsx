@@ -36,13 +36,13 @@ function Contacts(){
     return (
         <div className="page__contacts">
             <h2 className='page__contacts_title'>Contacts</h2>
-            <h3 className='page__contacts_phone'><span>Phone: &nbsp; </span><a onMouseOver={getToolTip} onMouseLeave={removeToolTip} className='contacts_phone' href='tel:+375296579256' title='Pavels Phone Number'>+375 (29) 657-92-56
-            {toolTipPhone && <div className='contacts__toolTip'>Call me</div>}</a></h3>
-            <h3 className='page__contacts_mail'><span>Mail: &nbsp; </span><a onMouseOver={getToolTip} onMouseLeave={removeToolTip} href='mailto: pufimcev8@gmail.com?subject=Responce to CV' title='Pavels Mail'>pufimcev8@gmail.com
-            {toolTipMail && <div className='contacts__toolTip'>Mail me</div>}</a></h3>
-            <h3>Place of residence: &nbsp; Minsk</h3>
-            <h3 className="page__contacts_linkedIn"><span>LinkedIn: &nbsp; </span><a onMouseOver={getToolTip} onMouseLeave={removeToolTip} rel="noreferrer" target='_blank' href='https://www.linkedin.com/in/pavel-ufimtsau-96120a214/?original_referer=' title='LinkedIn'>Pavel Ufimtsau
-            {toolTipLn && <div className='contacts__toolTip'>Examine me</div>}</a></h3>
+            <h4 className='page__contacts_phone'><span>Phone: &nbsp; </span><a onMouseOver={getToolTip} onMouseLeave={removeToolTip} className='contacts_phone' href='tel:+375296579256' title='Pavels Phone Number'>+375 (29) 657-92-56
+            {toolTipPhone && <div className='contacts__toolTip'>Call me</div>}</a></h4>
+            <h4 className='page__contacts_mail'><span>Mail: &nbsp; </span><a onMouseOver={getToolTip} onMouseLeave={removeToolTip} href='mailto: pufimcev8@gmail.com?subject=Responce to CV' title='Pavels Mail'>pufimcev8@gmail.com
+            {toolTipMail && <div className='contacts__toolTip'>Mail me</div>}</a></h4>
+            <h4>Place of residence: &nbsp; Minsk</h4>
+            <h4 className="page__contacts_linkedIn"><span>LinkedIn: &nbsp; </span><a onMouseOver={getToolTip} onMouseLeave={removeToolTip} rel="noreferrer" target='_blank' href='https://www.linkedin.com/in/pavel-ufimtsau-96120a214/?original_referer=' title='LinkedIn'>Pavel Ufimtsau
+            {toolTipLn && <div className='contacts__toolTip'>Examine me</div>}</a></h4>
         </div>
     )
 }

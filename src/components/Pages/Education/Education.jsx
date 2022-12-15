@@ -1,6 +1,6 @@
 import React, { useState }  from 'react';
 
-import Certificate from '../../../images/Certificate.pdf';
+import Certificate from '../../../files/Certificate.pdf';
 import './education.css';
 import './education_media.css';
 

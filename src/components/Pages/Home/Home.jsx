@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { MainContext } from '../../../App';
 import Me from '../../../images/me.png';
-import CV from '../../../images/CV.pdf';
+import CV from '../../../files/CV.pdf';
 
 import './home.css';
 import './home_media.css';

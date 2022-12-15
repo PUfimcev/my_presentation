@@ -1,3 +1,7 @@
-.main__content {
+.main__content>div {
     height: 100vh;
+}
+
+.main__content>div {
+    overflow-y: scroll;
 }
