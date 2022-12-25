@@ -8,7 +8,7 @@ import './home.css';
 import './home_media.css';
 
 function Home(){
-    const { setHomeActive, setAboutActive, setPortfolioActive, setWorkExperienceActive, setEducationActive, setContactsActive } = useContext(MainContext);
+    const { top } = useContext(MainContext);
 
     return (
         <div className="page__home">
@@ -18,7 +18,7 @@ function Home(){
                 <h3>I’m Pavel Ufimtsau</h3>
                 <h5>I’m a Front-End Developer, striving for expending, improving, upgrading of my knowledge, skills, experience of Webdevelopment.<br/>
                 I’m full of energy to create.</h5>
-                <div className="greeting__direction"><Link onClick={()=>{setAboutActive(true); setHomeActive(false); setPortfolioActive(false); setWorkExperienceActive(false); setEducationActive(false); setContactsActive(false);}}  className='direction_toAbout' to='/about'><span className='direction_toAbout-title'>Learn more</span><span className='direction_toAbout-arrow'></span><span className='direction_toAbout-circle'></span></Link></div>
+                <div className="greeting__direction"><Link onClick={()=>{top();}}  className='direction_toAbout' to='/about'><span className='direction_toAbout-title'>Learn more</span><span className='direction_toAbout-arrow'></span><span className='direction_toAbout-circle'></span></Link></div>
                 <div className="greeting__links">
                     <div className="greeting__link_in"><a rel="noreferrer" target='_blank' href='https://www.linkedin.com/in/pavel-ufimtsau-96120a214/?original_referer=' title='LinkedIn'>{/*empty a*/}</a></div>
                     <div className="greeting__link_mail"><a href='mailto: pufimcev8@gmail.com?subject=Responce to CV' title='Pavels Mail'>{/*empty a*/}</a></div>

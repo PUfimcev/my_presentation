@@ -5,6 +5,21 @@ import './portfolio_media.css';
 
 function Portfolio(){
 
+    function refActive(event){
+        let elem = event.target;
+        if(!elem) return;
+        elem.style.transform=`scale(1.15)`;
+        elem.style.boxShadow=`none`;
+    }
+
+    function refNotActive(event){
+        let elem = event.target;
+        if(!elem) return;
+        elem.style.transform=``;
+        elem.style.boxShadow=`4px 4px 5px 2px rgba(234, 239, 245, 0.3)`;
+    }
+
+
     const portfolioList = [
         {name: 'nursary primary school', href: 'https://pufimcev.github.io/nursary_primary_school/', title: "nursary_primary_school_project", stakeTech: 'React/JS/HTML/CSS' },
         {name: 'Lang app eng', href: 'https://pufimcev.github.io/Lang_app_eng/', title: 'Lang_app_eng_project', stakeTech: 'React/JS/HTML/CSS' },
@@ -20,8 +35,9 @@ function Portfolio(){
             <ul className="page__portfolio_list">
                 { portfolioList.map((item, index) =>{
                 return (<li key={index} className={`portfolio__project project-${index+1}`}> 
-                    <a href={item.href} target='_blanket'>
-                        <iframe className={`portfolio__project_iframe project_iframe-${index+1}`} title={item.title} src={item.href} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true} sandbox='allow-same-origin allow-scripts'></iframe>
+                    <a onMouseEnter={refActive} onMouseLeave={refNotActive} className={`portfolio__project ${item.title}`} href={item.href} target='_blanket' title={`portfolio__project-${index+1}`} >
+                        {/* <iframe className={`portfolio__project_iframe project_iframe-${index+1}`} title={item.title} src={item.href} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true} sandbox='allow-same-origin allow-scripts'></iframe> */}
+                        {/* <img src="" alt={item.name} /> */}
                     </a> 
                     <h5 className='portfolio__project_title'>{item.name}</h5>
                     <h6 className='portfolio__project_title'>{item.stakeTech}</h6>

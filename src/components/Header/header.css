@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--color-primary-font);
-    opacity: 0.8;
     padding-top: calc(var(--step)*8);
 }
 
@@ -15,4 +14,26 @@
     color: var(--color-secondary-red);
     padding: calc(var(--step)*2);
     line-height: calc(var(--step)*10);
+}
+
+.burger {
+    background-image: url('../../images/burger_menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 20px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.burger.arrow {
+    background-image: url('../../images/left_arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 20px;
+    border: 0;
+    background-color: transparent;    
 }

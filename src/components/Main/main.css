@@ -1,7 +1,8 @@
-.main__content>div {
-    height: 100vh;
+.main {
+    height: 80vh;
+    overflow-x: hidden;
 }
 
-.main__content>div {
-    overflow-y: scroll;
+.main::-webkit-scrollbar {
+    width: 0px;
 }

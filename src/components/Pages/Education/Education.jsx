@@ -1,6 +1,7 @@
 import React, { useState }  from 'react';
 
 import Certificate from '../../../files/Certificate.pdf';
+import CertificateImg from '../../../images/Certificate.jpg';
 import './education.css';
 import './education_media.css';
 
@@ -48,20 +49,7 @@ function Education(){
                     <h5>March 2022 – October 2022</h5>
                 </div>
                 <div className="education_certificate" onClick={()=>{setPopUpCertif(true)}}>
-                    
-                    {/* <a href={Certificate} rel="noreferrer" target='_blank'> */}
-                        <Document file={Certificate} className="pdf-document">
-                        <Page pageNumber={1} 
-                        //   key={`page_${index + 1}`}
-                        //   pageNumber={index + 1}
-                        //   width={375}
-                          loading="Loading Page..."
-                          renderAnnotationLayer={false}
-                          renderTextLayer={false}
-                          externalLinkTarget="_blank"
-                        />
-                    </Document>
-                    {/* </a> */}
+                    <img src={CertificateImg} alt="" />
                 </div>
                 {popUpCertif && <GetPopUp />}
             </section>

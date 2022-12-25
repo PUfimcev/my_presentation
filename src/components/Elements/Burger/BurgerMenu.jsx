@@ -1,0 +1,51 @@
+import React, { useRef } from 'react';
+import { Link } from "react-router-dom";
+
+import './burgerMenu.css';
+import './burgerMenu_media.css';
+
+function BurgerMenu(props) {
+
+    const { setBurgerMenu, setShowBurgerBtn } = props.burgerBtn;
+    const burgerForm = useRef();
+
+    function removeBurgerMenu() {
+        const burgerFormRemove = burgerForm.current;
+        burgerFormRemove.style.animation = '0.6s ease-in-out 0s 1 forwards toright';
+        setTimeout(()=>{setShowBurgerBtn(true);}, 300);
+        setTimeout(()=>{setBurgerMenu(false);}, 1200);
+        return;
+    }
+
+    return (
+        <div  ref={burgerForm} className="burgerform">
+            <button className="burgerform__btn__remove" onClick={removeBurgerMenu}></button>
+            <ul className='burgerform__nav__list'>
+                <li className='burgerform__nav__item'>
+                    <Link onClick={removeBurgerMenu} to='/'>Home</Link>
+                </li>
+                <li className='burgerform__nav__item'>
+                    <Link  onClick={removeBurgerMenu} to='/about'>About</Link>
+                </li>
+                <li className='burgerform__nav__item'>
+                    <Link  onClick={removeBurgerMenu} to='/portfolio'>Portfolio</Link>
+                </li>
+                <li className='burgerform__nav__item'>
+                    <Link onClick={removeBurgerMenu} to='/work-experience'>Work experience</Link>
+                </li>
+                <li className='burgerform__nav__item'>
+                    <Link  onClick={removeBurgerMenu} to='/education'>Education</Link>
+                </li>
+                <li className='burgerform__nav__item'>
+                    <Link  onClick={removeBurgerMenu} to='/contacts'>Contacts</Link>
+                </li>
+            </ul>
+            <div className="burgerform__contacts">
+                <h5 className='burgerform__contacts_phone'><a className='contacts_phone' href='tel:+375296579256' title='Pavels Phone Number'>+375 (29) 657-92-56</a></h5>
+                <h5 className='burgerform__contacts_mail'><a href='mailto: pufimcev8@gmail.com?subject=Responce to CV' title='Pavels Mail'>pufimcev8@gmail.com</a></h5>
+            </div>
+    </div>
+    )
+} 
+
+export default BurgerMenu;

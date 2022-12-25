@@ -21,7 +21,7 @@
     position: absolute;
     top: calc(var(--step)*20);;
     left: 0;
-    width: 100%;
+    width: 75%;
     height: auto;
 }
 

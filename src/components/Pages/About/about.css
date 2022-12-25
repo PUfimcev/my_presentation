@@ -1,10 +1,14 @@
 .page__about{
-    padding-bottom: calc(var(--step)*30);
+    padding-bottom: calc(var(--step)*3);
 }
 
 .about__description {
     width: 80%;
     padding-bottom: calc(var(--step)*3);
+}
+
+.about__description_title {
+    padding-bottom: calc(var(--step)*8);
 }
 
 .about__description_intro {
