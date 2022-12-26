@@ -8,7 +8,7 @@ function Portfolio(){
     function refActive(event){
         let elem = event.target;
         if(!elem) return;
-        elem.style.transform=`scale(1.15)`;
+        elem.style.transform=`scale(1.1)`;
         elem.style.boxShadow=`none`;
     }
 

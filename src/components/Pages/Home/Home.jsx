@@ -14,7 +14,7 @@ function Home(){
         <div className="page__home">
             <div className="page__home__picture"><img src={Me} alt='Me'/></div>
             <div className="page__home__greeting">
-                <h2>Hello!</h2>
+                <h1>Hello!</h1>
                 <h3>I’m Pavel Ufimtsau</h3>
                 <h5>I’m a Front-End Developer, striving for expending, improving, upgrading of my knowledge, skills, experience of Webdevelopment.<br/>
                 I’m full of energy to create.</h5>

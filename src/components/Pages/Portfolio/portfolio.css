@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: flex-start;
-    gap: calc(var(--step)*3);
+    gap: calc(var(--step)*4);
 }
 
 .portfolio__project {

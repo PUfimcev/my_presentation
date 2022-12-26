@@ -1,6 +1,8 @@
 .main {
-    height: 80vh;
+    height: 83%;
     overflow-x: hidden;
+    overflow-y: scroll;
+    /* padding-bottom: calc(var(--step)*4); */
 }
 
 .main::-webkit-scrollbar {

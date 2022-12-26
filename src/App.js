@@ -37,7 +37,8 @@ function App() {
   },[])
 
   function top() {
-    window.scrollTo(0,0);
+    let maimElem = document.querySelector('.main');
+    maimElem.scrollTop = 0;
     setScrollY(0);
 }
 
@@ -47,7 +48,7 @@ function App() {
           <Router>
               <Header />
               <Main />
-              {burgerMenu === true && <BurgerMenu burgerBtn={{ setBurgerMenu, setShowBurgerBtn}}/>}
+              {burgerMenu === true && <BurgerMenu burgerBtn={{ setBurgerMenu, setShowBurgerBtn, top}}/>}
           </Router>
         </MainContext.Provider>
     </div>

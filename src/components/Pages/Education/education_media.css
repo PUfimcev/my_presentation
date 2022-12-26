@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+
+    .page__education_place-1 {
+        padding-bottom: calc(var(--step)*5);
+    }
+
+    .place-2 {
+        padding: calc(var(--step)*4) 0;
+    }
+
+}

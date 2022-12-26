@@ -1,0 +1,14 @@
+@media (max-width: 1024px) {
+
+    .page__home__greeting>h1 {
+        padding: calc(var(--step)*10) 0 0;
+    }
+
+    .page__home__greeting>h3, .greeting__direction {
+        padding: calc(var(--step)*8) 0;
+    }
+
+    .greeting__links {
+        width: 55%;
+    }
+}

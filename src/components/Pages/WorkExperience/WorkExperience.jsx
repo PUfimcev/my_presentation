@@ -11,7 +11,7 @@ function WorkExperience(){
             <h2 className='page__workExperience_title'>Work experience</h2>
 
             <section className='page__workExperience_place-1'>
-                <h3><a rel="noreferrer" target="_blank" className='place-1_ref' href='https://myitschool.by/kursy-it/individualnye-kursy/' title='Educational center «My-IT-School»'>Educational center «My-IT-School»</a></h3>
+                <h3 className='place-1'><a rel="noreferrer" target="_blank" className='place-1_ref' href='https://myitschool.by/kursy-it/individualnye-kursy/' title='Educational center «My-IT-School»'>Educational center «My-IT-School»</a></h3>
                 <h5>March 2022 – October 2022</h5>
                 <h5>Listener</h5>
                 <h5>Development of projects in JS, ReactJS, response layout in HTML5/CSS3</h5>

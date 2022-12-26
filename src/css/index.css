@@ -31,7 +31,7 @@ body {
     color: var(--color-primary-font);
     background-image: url('../images/abstract_realistic_technology_particle_background.webp');
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     background-size: cover;
     overflow: hidden;
 }
@@ -43,17 +43,25 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    font-size: var(--h1-font-size);
+    line-height: calc(var(--step)*8);
+    font-weight: var(--font-weight-bold);
+    padding: calc(var(--step)*20) 0 0;
+}
+
 h2 {
     font-size: var(--h2-font-size);
     line-height: calc(var(--step)*8);
     font-weight: var(--font-weight-bold);
-    padding: calc(var(--step)*15) 0 0;
+    padding: calc(var(--step)*10) 0 0;
 }
 
 h3 {
     font-size: var(--h3-font-size);
     line-height: calc(var(--step)*6);
     font-weight: var(--font-weight-bold);
+    padding: calc(var(--step)*10) 0;
 }
 
 h4 {
@@ -64,4 +72,8 @@ h4 {
 h5 {
     font-size: var(--h5-font-size);
     line-height: calc(var(--step)*6);
+}
+
+.app {
+    height: 100vh;
 }

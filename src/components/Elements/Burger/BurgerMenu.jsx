@@ -6,7 +6,7 @@ import './burgerMenu_media.css';
 
 function BurgerMenu(props) {
 
-    const { setBurgerMenu, setShowBurgerBtn } = props.burgerBtn;
+    const { setBurgerMenu, setShowBurgerBtn, top } = props.burgerBtn;
     const burgerForm = useRef();
 
     function removeBurgerMenu() {
@@ -22,22 +22,22 @@ function BurgerMenu(props) {
             <button className="burgerform__btn__remove" onClick={removeBurgerMenu}></button>
             <ul className='burgerform__nav__list'>
                 <li className='burgerform__nav__item'>
-                    <Link onClick={removeBurgerMenu} to='/'>Home</Link>
+                    <Link onClick={()=>{ removeBurgerMenu(); top();}} to='/'>Home</Link>
                 </li>
                 <li className='burgerform__nav__item'>
-                    <Link  onClick={removeBurgerMenu} to='/about'>About</Link>
+                    <Link  onClick={()=>{ removeBurgerMenu(); top();}} to='/about'>About</Link>
                 </li>
                 <li className='burgerform__nav__item'>
-                    <Link  onClick={removeBurgerMenu} to='/portfolio'>Portfolio</Link>
+                    <Link  onClick={()=>{ removeBurgerMenu(); top();}} to='/portfolio'>Portfolio</Link>
                 </li>
                 <li className='burgerform__nav__item'>
-                    <Link onClick={removeBurgerMenu} to='/work-experience'>Work experience</Link>
+                    <Link onClick={()=>{ removeBurgerMenu(); top();}} to='/work-experience'>Work experience</Link>
                 </li>
                 <li className='burgerform__nav__item'>
-                    <Link  onClick={removeBurgerMenu} to='/education'>Education</Link>
+                    <Link  onClick={()=>{ removeBurgerMenu(); top();}} to='/education'>Education</Link>
                 </li>
                 <li className='burgerform__nav__item'>
-                    <Link  onClick={removeBurgerMenu} to='/contacts'>Contacts</Link>
+                    <Link  onClick={()=>{ removeBurgerMenu(); top();}} to='/contacts'>Contacts</Link>
                 </li>
             </ul>
             <div className="burgerform__contacts">

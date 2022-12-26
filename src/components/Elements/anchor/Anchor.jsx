@@ -3,12 +3,11 @@ import './anchor.css';
 import { MainContext } from '../../../App';
 
 function Anchor(props) {
-    const { pageTop, widthMain } = props.dataMain;
+    const { pageTop } = props.dataMain;
 	const { screenWidth  } = useContext(MainContext);
 
-
 	return (
-		<div onClick={pageTop} className="anchor" style={{left: `${screenWidth > 1024 ? widthMain +20 : screenWidth - 60}px`}} ></div>
+		<div onClick={pageTop} className="anchor" style={{left: `${screenWidth > 1024 ? screenWidth  - 90 : screenWidth - 50}px`}} ></div>
 	);
 }
 

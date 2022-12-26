@@ -29,14 +29,6 @@
     width: 45%;
 }
 
-.page__home__greeting>h2 {
-    padding: calc(var(--step)*20) 0 0;
-}
-
-h3 {
-    padding: calc(var(--step)*10) 0;
-}
-
 
 .greeting__direction {
     width: 250px;
