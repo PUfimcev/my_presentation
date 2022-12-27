@@ -5,6 +5,7 @@
 
 .page__education {
     width: 90%;
+    padding-bottom: calc(var(--step)*5);
     margin: 0 auto;
 }
 

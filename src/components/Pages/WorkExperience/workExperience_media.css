@@ -5,3 +5,10 @@
         padding: calc(var(--step)*10) 0 calc(var(--step)*4) 0;
     }
 }
+
+@media (max-width: 768px) {
+
+    .page__workExperience {
+        width: 100%;
+    }
+}

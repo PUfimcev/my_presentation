@@ -10,16 +10,18 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: calc(var(--step)*6);
+    
 }
 
 .page__home__picture {
     position: relative;
     width: 55%;
+    height: 100%;
 }
 
 .page__home__picture>img {
     position: absolute;
-    top: calc(var(--step)*20);;
+    top: calc(var(--step)*15); 
     left: 0;
     width: 75%;
     height: auto;

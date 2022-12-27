@@ -13,6 +13,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 35%;
     position: fixed;
     gap: calc(var(--step)*6);
     top: 0%;

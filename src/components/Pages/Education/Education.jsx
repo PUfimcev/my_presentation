@@ -1,4 +1,5 @@
-import React, { useState }  from 'react';
+import React, { useState, useContext }  from 'react';
+import { MainContext } from '../../../App';
 
 import Certificate from '../../../files/Certificate.pdf';
 import CertificateImg from '../../../images/Certificate.jpg';
@@ -12,6 +13,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function Education(){
 
+    const { screenWidth } = useContext(MainContext);
     const [popUpCertif, setPopUpCertif] = useState(false);
 
     function GetPopUp() {
@@ -48,9 +50,11 @@ function Education(){
                     <h5>Front-end development Course</h5>
                     <h5>March 2022 – October 2022</h5>
                 </div>
-                <div className="education_certificate" onClick={()=>{setPopUpCertif(true)}}>
-                    <img src={CertificateImg} alt="" />
-                </div>
+                {screenWidth > 425 ? <div className="education_certificate" onClick={()=>{setPopUpCertif(true)}}>
+                    <img src={CertificateImg} alt="Certificate" />
+                </div> : <div className="education_certificate">
+                    <img src={CertificateImg} alt="Certificate" />
+                </div>}
                 {popUpCertif && <GetPopUp />}
             </section>
 

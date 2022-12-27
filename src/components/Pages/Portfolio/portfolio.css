@@ -14,6 +14,7 @@
     text-transform: uppercase;
     margin-bottom: calc(var(--step)*4);
     width: 30%;
+
     max-width: 500px;
     min-width: 385px;
     display: flex;
@@ -29,13 +30,13 @@
     margin-bottom: calc(var(--step)*4);
     overflow: hidden;
     border-radius: calc(var(--step)*2);
-    box-shadow: 4px 4px 5px 2px rgba(234, 239, 245, 0.3);
+    box-shadow: 4px 4px 4px 2px rgba(234, 239, 245, 0.5);
 }
 
 .portfolio__project {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
+    background-size: 100% 100%;
 }
 
 .nursary_primary_school_project {

@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .burgerform {
+        width: 45%;
+    }
+}
+
+@media (max-width: 425px) {
+    .burgerform {
+        width: 100%;
+    }
+}

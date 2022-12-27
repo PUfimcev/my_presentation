@@ -8,14 +8,28 @@ function BurgerMenu(props) {
 
     const { setBurgerMenu, setShowBurgerBtn, top } = props.burgerBtn;
     const burgerForm = useRef();
+    
+    const removeBurgerMenu = (async () => {
+        let promise = new Promise((resolve, reject) => {
+            const burgerFormRemove = burgerForm.current;
+            resolve(burgerFormRemove.style.animation = '0.6s ease-in-out 0s 1 forwards toright');
+            reject(new Error('Execution error'))
+        })
 
-    function removeBurgerMenu() {
-        const burgerFormRemove = burgerForm.current;
-        burgerFormRemove.style.animation = '0.6s ease-in-out 0s 1 forwards toright';
-        setTimeout(()=>{setShowBurgerBtn(true);}, 300);
-        setTimeout(()=>{setBurgerMenu(false);}, 1200);
-        return;
-    }
+        await promise.then(()=>{
+            setTimeout(()=>{setShowBurgerBtn(true);}, 300);
+        }).then(()=>{
+            setTimeout(()=>{setBurgerMenu(false);}, 500);
+        }).catch((e)=>{console.log('Error is',e)})        
+    })
+
+    // function removeBurgerMenu() {
+    //     const burgerFormRemove = burgerForm.current;
+    //     burgerFormRemove.style.animation = '0.6s ease-in-out 0s 1 forwards toright';
+    //     setTimeout(()=>{setShowBurgerBtn(true);}, 300);
+    //     setTimeout(()=>{setBurgerMenu(false);}, 1200);
+    //     return;
+    // }
 
     return (
         <div  ref={burgerForm} className="burgerform">

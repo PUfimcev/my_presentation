@@ -12,7 +12,9 @@ function Home(){
 
     return (
         <div className="page__home">
-            <div className="page__home__picture"><img src={Me} alt='Me'/></div>
+            <div className="page__home__picture">
+                <img src={Me} alt='Me'/>
+            </div>
             <div className="page__home__greeting">
                 <h1>Hello!</h1>
                 <h3>I’m Pavel Ufimtsau</h3>
@@ -24,8 +26,6 @@ function Home(){
                     <div className="greeting__link_mail"><a href='mailto: pufimcev8@gmail.com?subject=Responce to CV' title='Pavels Mail'>{/*empty a*/}</a></div>
                     <div className="greeting__link_cv"><a rel="noreferrer"target='_blank' href={CV} title='My CV'>{/*empty a*/}</a></div>
                 </div>
-
-
             </div>
         </div>
     )
