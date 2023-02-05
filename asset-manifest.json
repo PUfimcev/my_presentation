@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/my_presentation/static/css/main.b6cac2e2.css",
-    "main.js": "/my_presentation/static/js/main.97798493.js",
+    "main.css": "/my_presentation/static/css/main.1d391dfe.css",
+    "main.js": "/my_presentation/static/js/main.6090332a.js",
     "static/media/treehouse_page.png": "/my_presentation/static/media/treehouse_page.3b35089df0c334469412.png",
     "static/media/nursary_proj.png": "/my_presentation/static/media/nursary_proj.a719da633981dc91a8ef.png",
     "static/media/learn_eng.png": "/my_presentation/static/media/learn_eng.d81eed2fdfc939bb0911.png",
     "static/media/me.png": "/my_presentation/static/media/me.264986ac94b7895dd94f.png",
     "static/media/Certificate.pdf": "/my_presentation/static/media/Certificate.bf1f66168ff87caf4268.pdf",
-    "static/media/CV.pdf": "/my_presentation/static/media/CV.a9e4f00afc02cb2318ef.pdf",
+    "static/media/CV.pdf": "/my_presentation/static/media/CV.c373880c05a9a455e5ed.pdf",
     "static/media/abstract_realistic_technology_particle_background.webp": "/my_presentation/static/media/abstract_realistic_technology_particle_background.ce249f6f6b8d54b4b59c.webp",
     "static/media/contacts_phone.png": "/my_presentation/static/media/contacts_phone.e2bbd6aa6357298f1442.png",
     "static/media/Certificate.jpg": "/my_presentation/static/media/Certificate.d9723612880e51b2e8c9.jpg",
     "static/media/calc.png": "/my_presentation/static/media/calc.ec849650a8adcbe980d8.png",
     "static/media/tic-tac.png": "/my_presentation/static/media/tic-tac.3becd460da2ba8dcb21c.png",
     "index.html": "/my_presentation/index.html",
-    "main.b6cac2e2.css.map": "/my_presentation/static/css/main.b6cac2e2.css.map",
-    "main.97798493.js.map": "/my_presentation/static/js/main.97798493.js.map"
+    "main.1d391dfe.css.map": "/my_presentation/static/css/main.1d391dfe.css.map",
+    "main.6090332a.js.map": "/my_presentation/static/js/main.6090332a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6cac2e2.css",
-    "static/js/main.97798493.js"
+    "static/css/main.1d391dfe.css",
+    "static/js/main.6090332a.js"
   ]
 }
