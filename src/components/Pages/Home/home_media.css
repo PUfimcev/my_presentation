@@ -1,0 +1,98 @@
+@media (min-width: 1024px) {
+    .direction_toAbout:hover:after {
+        content: '';
+        position: absolute;
+        z-index: 3;
+        left: 0%;
+        bottom: 0;
+        width: 70%;
+        height: 3px;
+        transform: translateX(-110%);
+        background-color: var(--color-secondary-red);
+        animation: 1.5s ease-in-out infinite normal torightDir;
+    }
+
+    .greeting__link_in:hover, .greeting__link_mail:hover, .greeting__link_cv:hover {
+        scale: 120%;
+        opacity: 1;
+        color: var( --color-secondary-red);
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .page__home__picture {
+        width: 45%;
+    }
+
+    .page__home__greeting>h1 {
+        padding: calc(var(--step)*10) 0 0;
+    }
+
+    .page__home__greeting>h3, .greeting__direction {
+        padding: calc(var(--step)*8) 0;
+    }
+
+    .greeting__links {
+        width: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page__home__picture {
+        /* width: 55%; */
+    }
+
+    .greeting__direction {
+        padding: calc(var(--step)*5) 0;
+    }
+
+    .greeting__links {
+        width: 65%;
+    }
+} 
+
+@media (max-width: 600px) {
+
+    .page__home {
+        flex-direction: column;
+        height: 100%;
+        gap: calc(var(--step)*0);
+        padding-bottom: calc(var(--step)*20);
+    }
+
+    .page__home__picture {
+        width: 55%;
+    }
+
+
+    .page__home__greeting {
+        width: 100%;
+    }
+
+    .greeting__links {
+        width: 75%;
+    }
+} 
+
+
+@media (max-width: 480px) {
+
+    .page__home__greeting>h1{
+        padding-top: calc(var(--step)*5);
+    }
+
+    .page__home__picture {
+        width: 80%;
+    }
+
+} 
+
+@media (max-width: 375px) {
+
+    .page__home__picture {
+        min-height: 410px;
+    }
+
+} 

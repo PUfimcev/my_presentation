@@ -1,0 +1,17 @@
+
+@media (max-width: 425px) {
+
+    .page__portfolio_list{
+        padding-bottom: calc(var(--step)*20);
+    }
+
+    .portfolio__project {
+        min-width: 350px;
+    }
+}
+
+@media (max-width: 375px) {
+    .portfolio__project {
+        min-width: 320px;
+    }
+}

@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+
+    .page__workExperience_place-1 .place-1 {
+
+        padding: calc(var(--step)*10) 0 calc(var(--step)*4) 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page__workExperience {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .page__workExperience{
+        padding-bottom: calc(var(--step)*20);
+    }
+}

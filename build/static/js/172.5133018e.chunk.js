@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_presentation=self.webpackChunkmy_presentation||[]).push([[172],{8172:function(e,n,t){t.r(n),t.d(n,{default:function(){return c}});var a=t(2791),r=t(6106),s=t(184);var c=function(e){var n=e.dataMain.pageTop,t=(0,a.useContext)(r.T).screenWidth;return(0,s.jsx)("div",{onClick:n,className:"anchor",style:{left:"".concat(t>1024?t-90:t-50,"px")}})}}}]);
+//# sourceMappingURL=172.5133018e.chunk.js.map

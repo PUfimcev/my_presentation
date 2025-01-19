@@ -1,0 +1,61 @@
+@media (max-width: 1024px) {
+
+    .page__education_place-1 {
+        padding-bottom: calc(var(--step)*5);
+    }
+
+    .place-2 {
+        padding: calc(var(--step)*4) 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page__education {
+        width: 100%;
+    }
+    
+    .popUp__certificate_wrapper {
+        width: 70%;
+        height: auto;
+    }
+    
+    .react-pdf__Page__canvas{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .education_certificate {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .education_certificate {
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width: 425px) {
+
+    .page__education{
+        padding-bottom: calc(var(--step)*20);
+    }
+
+    .page__education_place-1 {
+        flex-direction: column;
+        gap: calc(var(--step)*6);
+    }
+
+    .education_certificate{
+        width: 90%;
+        height: auto;
+    }
+
+    .education_certificate {
+        width: 100%;
+    }
+}

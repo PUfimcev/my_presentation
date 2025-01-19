@@ -1,0 +1,14 @@
+.main {
+    height: 83vh;
+    overflow-y: scroll;
+
+    position: fixed;
+    z-index: 1;
+    top: 112px;
+    width: 100%;
+    
+}
+
+.main::-webkit-scrollbar {
+    width: 0px;
+}
